@@ -2,11 +2,16 @@
 
 Fork from https://github.com/minhtranite/react-photoswipe
 
-Support React 16
+Support React 16, PureComponent
 
 Solved this issue https://github.com/minhtranite/react-photoswipe/issues/9
 
 PhotoSwipe, PhotoSwipeGallery component for ReactJS base on [PhotoSwipe](http://photoswipe.com/).
+
+## Demo
+
+View [demo](http://minhtranite.github.io/react-photoswipe) or example folder.
+
 
 ## Installation
 
@@ -188,7 +193,3 @@ imageLoadComplete(instance, index, item);
 | updateScrollOffset | function |  | false | Photoswipe event listener |
 | preventDragEvent | function |  | false | Photoswipe event listener |
 | shareLinkClick | function |  | false | Photoswipe event listener |
-
-## Demo
-
-View [demo](http://minhtranite.github.io/react-photoswipe) or example folder.

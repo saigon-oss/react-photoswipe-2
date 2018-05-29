@@ -5,7 +5,7 @@ import pick from 'lodash.pick';
 import PhotoSwipe from './PhotoSwipe.js';
 import events from './events';
 
-class PhotoSwipeGallery extends React.Component {
+class PhotoSwipeGallery extends React.PureComponent {
   static propTypes = {
     items: PropTypes.array.isRequired,
     options: PropTypes.object,

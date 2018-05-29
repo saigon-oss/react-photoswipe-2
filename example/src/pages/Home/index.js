@@ -1,6 +1,6 @@
 import React from 'react';
 import Document from 'components/Document';
-import { PhotoSwipe } from 'react-photoswipe';
+import { PhotoSwipe } from 'react-photoswipe-2';
 
 class HomePage extends React.Component {
   state = {

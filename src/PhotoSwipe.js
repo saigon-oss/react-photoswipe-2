@@ -5,7 +5,7 @@ import PhotoswipeUIDefault from 'photoswipe/dist/photoswipe-ui-default';
 import classnames from 'classnames';
 import events from './events';
 
-class PhotoSwipe extends React.Component {
+class PhotoSwipe extends React.PureComponent {
   static propTypes = {
     isOpen: PropTypes.bool.isRequired,
     items: PropTypes.array.isRequired,
