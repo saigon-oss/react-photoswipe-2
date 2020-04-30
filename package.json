@@ -9,6 +9,14 @@
     "build": "NODE_ENV=production gulp build",
     "pub": "npm publish"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anhdn/react-photoswipe-2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anhdn/react-photoswipe-2/issues"
+  },
+  "homepage": "https://github.com/anhdn/react-photoswipe-2#readme",
   "keywords": [
     "react-component",
     "react",
