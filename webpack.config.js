@@ -1,7 +1,9 @@
 import webpack from 'webpack';
 import path from 'path';
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 import camelCase from 'camelcase';
 import pkg from './package.json';
+
 
 const capitalizeFirstLetter = string => string.charAt(0).toUpperCase() + string.slice(1);
 
@@ -63,16 +65,10 @@ const webpackConfig = {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV)
       }
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: false,
-      compress: {
-        warnings: false
-      },
-      output: {
-        comments: false
-      }
-    })
-  ]
+  ],
+  optimization: {
+    minimizer: [new UglifyJsPlugin()],
+  },
 };
 
 export default webpackConfig;
