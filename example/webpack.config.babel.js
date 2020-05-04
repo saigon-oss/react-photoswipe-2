@@ -4,7 +4,7 @@ import ExtractTextWebpackPlugin from 'extract-text-webpack-plugin';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import pkg from '../package.json';
-
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const ENV = process.env.NODE_ENV || 'development';
 const DEV = ENV === 'development';
 const PROD = ENV === 'production';
@@ -139,11 +139,7 @@ if (!HOT) {
 
 if (PROD) {
   webpackConfig.plugins = webpackConfig.plugins.concat([
-    new webpack.optimize.UglifyJsPlugin({
-      output: {
-        comments: false
-      }
-    })
+    new UglifyJsPlugin()
   ]);
 }
 

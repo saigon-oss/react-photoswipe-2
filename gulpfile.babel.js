@@ -12,6 +12,7 @@ import pkg from './package.json';
 import webpackConfig from './webpack.config';
 import exampleWebpackConfig from './example/webpack.config.babel';
 
+
 gulp.task('build:lib:clean', () => {
   del.sync(['lib', 'dist']);
 });

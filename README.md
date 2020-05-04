@@ -12,6 +12,8 @@ PhotoSwipe, PhotoSwipeGallery component for ReactJS base on [PhotoSwipe](http://
 
 View [demo](http://minhtranite.github.io/react-photoswipe) or example folder.
 
+## Contribute
+https://github.com/anhdn/react-photoswipe-2
 
 ## Installation
 
